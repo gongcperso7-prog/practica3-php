@@ -1,0 +1,36 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <form action="datos_alumno.php" method="post">
+        <table border="1" cellpadding="8">
+            <tr>
+                <td>
+                    DATOS DEL ALUMNO:<br>
+                    Introduzca su nombre:<br>
+                    <input type="text" name="nombre"><br>
+                    Introduzca su telefono:<br>
+                    <input type="text" name="telefono">
+                    Matriculado <input type="checkbox" name="matriculado" value="si"><br>
+                    Mostrar datos:
+                    <select name="mostrar">
+                        <option value="pantalla">Por Pantalla</option>
+                        <option value="fichero">En Archivo datos.txt</option>
+                    </select>
+                </td>
+                <td>
+                    Enseñanza:<br>
+                    <input type="radio" name="ensenanza" value="Secundaria"> Secundaria
+                    <input type="radio" name="ensenanza" value="Bachillerato"> Bachillerato<br>
+                    <input type="radio" name="ensenanza" value="Ciclo Medio"> Ciclo Medio
+                    <input type="radio" name="ensenanza" value="Ciclo Superior"> Ciclo Superior
+                </td>
+            </tr>
+        </table>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
